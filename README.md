@@ -30,13 +30,14 @@ Now that you are following yourself, you should be able to use your Dexcom crede
             "name": "homebridge-dexcom",
             "platform": "Dexcom",
             "accessoryName": "Dexcom G6",
-            "applicationId": "d89443d2-327c-4a6f-89e5-496bbb0317db", // This is a magic value required for this plugin to work.
+            "applicationId": "d89443d2-327c-4a6f-89e5-496bbb0317db",
             "username": "<username>",
             "password": "<password>"
         }
     ]
 }
 ```
+> The `applicationId` is a constant value that is required for this plugin to work.
 
 ## Known Shortcommings
 - We use an Ambient Light Sensor because it's allowed values seem to encompass all possible glucose values. This is unfortunate, but it's the best thing available _I think_.
