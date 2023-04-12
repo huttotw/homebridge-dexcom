@@ -22,6 +22,22 @@ This plugin works by using an undocumented API from Dexcom's Share app. Traditio
 
 Now that you are following yourself, you should be able to use your Dexcom credentials for this plugin. By default, we request new glucose values every 1 minute. You can override this behavior via `refreshInterval`.
 
+### Example Config
+```json
+{
+    "platforms": [
+        {
+            "name": "homebridge-dexcom",
+            "platform": "Dexcom",
+            "accessoryName": "Dexcom G6",
+            "applicationId": "d89443d2-327c-4a6f-89e5-496bbb0317db", // This is a magic value required for this plugin to work.
+            "username": "<username>",
+            "password": "<password>"
+        }
+    ]
+}
+```
+
 ## Known Shortcommings
 - We use an Ambient Light Sensor because it's allowed values seem to encompass all possible glucose values. This is unfortunate, but it's the best thing available _I think_.
 - This only works for one Dexcom device at a time. If you have a use case where you need to support multiple Dexcom devices at once, please reach out or contribute.
