@@ -1,8 +1,8 @@
 
 <div align="center">
 
-<img src="https://github.com/homebridge/branding/raw/master/logos/homebridge-wordmark-logo-vertical.png" width="100">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dexcom_logo.svg/2560px-Dexcom_logo.svg.png" width="150">
+<img src="https://github.com/homebridge/branding/raw/master/logos/homebridge-wordmark-logo-vertical.png" width="150">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dexcom_logo.svg/2560px-Dexcom_logo.svg.png" width="200">
 
 </div>
 
