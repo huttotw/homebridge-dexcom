@@ -1,15 +1,39 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "Dexcom",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "accessoryName": {
+        "title": "Accessory Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": ""
+      },
+      "applicationId": {
+        "title": "Application ID",
+        "type": "string",
+        "required": true,
+        "default": "d89443d2-327c-4a6f-89e5-496bbb0317db"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "refreshInterval": {
+        "title": "Refresh Interval",
+        "type": "number",
+        "required": true,
+        "default": 60000
+      },
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true,
+        "default": ""
       }
     }
   }
