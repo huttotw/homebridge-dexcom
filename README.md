@@ -12,6 +12,8 @@
 
 This plugin connects via Dexcom Share to report real time blood glucose levels disguised as an Ambient Light Sensor.
 
+> Usage is at your own risk. Please **do not** depend on this plugin for any life saving alerts.
+
 ## Getting Started
 This plugin works by using an undocumented API from Dexcom's Share app. Traditionally, this app has been used to share your real time blood glucose with friends and family.
 
