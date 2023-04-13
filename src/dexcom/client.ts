@@ -19,7 +19,7 @@ export class Dexcom {
     this.client.interceptors.response.use((response) => {
       return response;
     }, (error) => {
-      this.log.error('Got error repsonse', error.response.data);
+      this.log.error('Got error repsonse', 'status', error.response.status, 'data', error.response.data);
       return Promise.reject(error);
     });
 
