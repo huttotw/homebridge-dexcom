@@ -1,7 +1,7 @@
 {
   "displayName": "Dexcom",
   "name": "homebridge-dexcom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Exposes your blood glucose as an Ambient Light Sensor",
   "license": "Apache-2.0",
   "repository": {

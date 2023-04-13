@@ -14,6 +14,15 @@ export class Dexcom {
   ) {
     this.sessionId = '';
     this.client = axios.create();
+
+    // Add interceptors to log all error responses.
+    this.client.interceptors.response.use((response) => {
+      return response;
+    }, (error) => {
+      this.log.error('Got error repsonse', error.response.data);
+      return Promise.reject(error);
+    });
+
     this.log.debug('Initialized Dexcom client');
   }
 
@@ -44,6 +53,7 @@ export class Dexcom {
     this.log.debug('Got session ID');
 
     return sessionId;
+
   }
 
   async getLatestEGV(): Promise<EGV> {

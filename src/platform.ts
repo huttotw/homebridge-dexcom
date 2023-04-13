@@ -25,7 +25,7 @@ export class ExampleHomebridgePlatform implements DynamicPlatformPlugin {
   ) {
     this.dexcom = new Dexcom(this.log, config.username, config.password, config.applicationId);
 
-    this.log.debug('Finished initializing platform:', this.config.name);
+    this.log.debug('Finished initializing platform:', this.config.platform);
 
     // When this event is fired it means Homebridge has restored all cached accessories from disk.
     // Dynamic Platform plugins should only register new accessories after this event was fired,
