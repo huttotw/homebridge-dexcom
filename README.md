@@ -39,7 +39,7 @@ Now that you are following yourself, you should be able to use your Dexcom crede
     ]
 }
 ```
-> The `applicationId` is a constant value that is required for this plugin to work.
+> :warning: The `applicationId` is a constant value that is required for this plugin to work.
 
 ## Known Shortcommings
 - We use an Ambient Light Sensor because it's allowed values seem to encompass all possible glucose values. This is unfortunate, but it's the best thing available _I think_.
